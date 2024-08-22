@@ -1062,12 +1062,12 @@ html {
   height: 1.25rem;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-5 {
   width: 1.25rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .grid-flow-col {
@@ -1302,5 +1302,11 @@ html {
 
   .md\:text-end {
     text-align: end;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-1\/2 {
+    width: 50%;
   }
 }
