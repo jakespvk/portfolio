@@ -9,3 +9,13 @@
   font-weight: 500;
   font-style: normal;
 }
+
+@layer base {
+    a {
+        @apply text-blue-600 hover:underline
+    }
+
+    .timeline-start, .timeline-end {
+        padding-bottom: 2rem;
+    }
+}
