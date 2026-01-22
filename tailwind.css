@@ -1058,6 +1058,18 @@ html {
   margin-bottom: 2.5rem;
 }
 
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -1070,6 +1082,10 @@ html {
   width: 100%;
 }
 
+.grow {
+  flex-grow: 1;
+}
+
 .grid-flow-col {
   grid-auto-flow: column;
 }
@@ -1078,16 +1094,55 @@ html {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .gap-6 {
   gap: 1.5rem;
+}
+
+.divide-x > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-x-reverse: 0;
+  border-right-width: calc(1px * var(--tw-divide-x-reverse));
+  border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+}
+
+.divide-solid > :not([hidden]) ~ :not([hidden]) {
+  border-style: solid;
+}
+
+.divide-slate-700 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-divide-opacity));
 }
 
 .p-4 {
   padding: 1rem;
 }
 
-.p-9 {
-  padding: 2.25rem;
+.pb-9 {
+  padding-bottom: 2.25rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-center {
@@ -1118,11 +1173,6 @@ html {
   line-height: 1.75rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .font-black {
   font-weight: 900;
 }
@@ -1137,6 +1187,27 @@ html {
 
 .tracking-tighter {
   letter-spacing: -0.05em;
+}
+
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.decoration-blue-600 {
+  text-decoration-color: #2563eb;
+}
+
+.decoration-solid {
+  text-decoration-style: solid;
+}
+
+.decoration-auto {
+  text-decoration-thickness: auto;
 }
 
 @media not all and (min-width: 768px) {
@@ -1304,6 +1375,23 @@ html {
     grid-column-start: auto;
     grid-row-start: none;
   }
+}
+
+.\*\:mx-auto > * {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.\*\:ml-5 > * {
+  margin-left: 1.25rem;
+}
+
+.\*\:pl-5 > * {
+  padding-left: 1.25rem;
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 
 @media (min-width: 768px) {
